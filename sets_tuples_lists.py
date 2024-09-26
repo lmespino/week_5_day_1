@@ -3,7 +3,7 @@
 #   Set   = {} unordered and immutable, but Add/Remove OK. NO duplicates
 #   Tuple = () ordered and unchangeable. Duplicates OK. FASTER
 
-fruits = ["apple", "orange", "banana", "coconut", "watermelon", "mango", "strawberry", "peach"]
+# fruits = ["apple", "orange", "banana", "coconut", "watermelon", "mango", "strawberry", "peach"]
 
 # print(fruits[1:]) # adding a 0 gives apple, 1 gives orange, 2 gives banana, 3 gives coconut (just like strings)
 
@@ -31,6 +31,52 @@ fruits = ["apple", "orange", "banana", "coconut", "watermelon", "mango", "strawb
 # fruits.sort()
 # fruits.reverse()
 # fruits.clear()
-print(fruits.index("apple"))
+# print(fruits.index("apple"))
 
-print(fruits)
+# print(fruits)
+
+
+
+cars = ["Ford", "Volvo", "BMW"]
+
+# add 4 new cars in the list
+# cars.append("Honda")
+# cars.append("Audi")
+# cars.append("Chevrolet")
+# cars.append("Cadillac")
+
+# # print out the list of cars in an f-string
+# # that says "The cars in the list are: "
+# print(f"The cars in the list are: {cars}")
+
+# # replace the last element in the list with "Toyota"
+# # print out the list of cars in an f-string again
+# cars[-1] = "Toyota"
+# print(f"The cars in the list are: {cars}")
+
+# # replace the 3rd element in the list with another car
+# # print out the list of cars in an f-string
+# cars[2] = "Ferrari"
+# print(f"The cars in the list are: {cars}")
+
+# # insert a new car in the 2nd position
+# # print out the list of cars in an f-string
+# cars.insert(1, "Porsche")
+# print(f"The cars in the list are: {cars}")
+
+# # remove the 3rd element from the list
+# # print out the list of cars in an f-string
+# cars.remove("Volvo")
+# print(f"The cars in the list are: {cars}")
+
+# # check if the list contains the car "Ford"
+# # print out the result in an f-string
+# print(f"Ford" in cars)
+
+for car in cars:
+    requestCar = input("Enter a car: ")
+    cars.append(requestCar)
+    print(f"The cars in the list are: {cars}")
+    if len(cars) >= 10:
+        print("You have reached the maximum number of cars")
+        break
