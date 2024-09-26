@@ -37,7 +37,7 @@
 
 
 
-cars = ["Ford", "Volvo", "BMW"]
+# cars = ["Ford", "Volvo", "BMW"]
 
 # add 4 new cars in the list
 # cars.append("Honda")
@@ -73,10 +73,41 @@ cars = ["Ford", "Volvo", "BMW"]
 # # print out the result in an f-string
 # print(f"Ford" in cars)
 
-for car in cars:
-    requestCar = input("Enter a car: ")
-    cars.append(requestCar)
-    print(f"The cars in the list are: {cars}")
-    if len(cars) >= 10:
-        print("You have reached the maximum number of cars")
-        break
+# for car in cars:
+#     requestCar = input("Enter a car: ")
+#     cars.append(requestCar)
+#     print(f"The cars in the list are: {cars}")
+#     if len(cars) >= 10:
+#         print("You have reached the maximum number of cars")
+#         break
+
+
+
+# challenge
+# create a list of friends
+friends = ["Alejandro",]
+print(friends)
+# add 4 new friends in the list by requesting the user
+# print out the list of friends in an f-string
+for friend in friends:
+    requestFriends = input("Enter a friend: ")
+    friends.append(requestFriends)
+    print(f"The friends in the list are: {friends}")
+    if len(friends) >= 4:
+        print("That's enough Friends")
+        
+
+# replace the last element in the list with another friend
+# print out the list of friends in an f-string
+friends[-1] = "Ramiro"
+print(f"The friends in the list are: {friends}")
+
+# replace the 3rd element in the list with another friend
+# print out the list of friends in an f-string
+friends[2] = "Joaquin"
+print(f"The friends in the list are: {friends}")
+
+# insert a new friend in the 2nd position
+# print out the list of friends in an f-string
+friends.insert(1, "Frida")
+print(f"The friends in the list are: {friends}")
